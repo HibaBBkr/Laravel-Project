@@ -1,0 +1,16 @@
+@extends('layouts.sallety')
+
+@section('title', SalleTY')
+
+@section('stylesheets')
+  <link rel="stylesheet" href="{{ asset('css/customer/reserve_pay.css') }}">
+@endsection
+
+@section('content')
+
+
+@endsection
+
+@section('scripts')
+        <script src="{{ asset('js/customer/newService.js') }}"></script>
+@endsection

@@ -1,0 +1,144 @@
+
+.path {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .path .title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+  }
+  .path-btn{
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fbfbfb;
+    background-color: #EFBF04;
+    border: 2px solid #EFBF04;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .path-btn:hover{
+    background-color: #c39c01;
+    transition: background-color 0.3s ease;
+  }
+  
+    .account-container {
+      padding: 24px 0;
+      width: 900px;
+      margin: auto;
+    }
+    
+    .profile-section {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      height: 120px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .profile-img {
+      position: relative;
+      display: inline-block;
+  
+    }
+    
+    .profile-img img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .camera-icon {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: black;
+      color: white;
+      border-radius: 50%;
+      padding: 5px;
+      cursor: pointer;
+    }
+    
+    .form-section {
+      margin: 15px auto;
+      max-width: 800px; /* Adjust as needed */
+    }
+    
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #484848;
+  
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      padding: 10px;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 14px;
+      
+    }
+    
+    .input-icon {
+      position: relative;
+    }
+      
+  /* card Style (applied to all sections) */
+  .card {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  h4 {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    color: #484848;
+    font-size: 0.95rem;
+  }
+  
+  /* Chevron Icon Styling */
+  .card .fa-chevron-right {
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .card .fa-chevron-right:hover {
+    color: #a0a0a0;
+    transform: translateX(2px);
+  }
+  /* Make the checkbox bigger */
+  .card input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: #000; /* Changes the checkmark color */
+    transform: scale(1.2); /* Alternative way to scale it up */
+  }

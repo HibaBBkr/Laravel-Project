@@ -1,0 +1,125 @@
+body {
+    font-family: "ABCSocial Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+  }
+
+.pro-header {
+    background-color: #044A42;
+    color: white;
+    margin: auto;
+    align-items: center;
+  }
+  
+  nav {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+      padding: 0 100px;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: medium;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.language-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-options {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #044A42;
+    color: #fdfdfd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.lang-options div {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.lang-options div:hover {
+    background-color: #dedede;
+}
+
+.globe-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    /* هذا يعكس اللون ويخليه أبيض */
+}
+
+.user-menu-container { position: relative; display: inline-block; }
+.user-menu-trigger {
+    display: flex; align-items: center;
+    padding: 4px 8px; cursor: pointer;
+    border: none; border-radius: 8px;
+    background-color: transparent;
+    font-family: inherit; color: inherit;
+}
+.user-menu-trigger:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+.user-menu-trigger .user-avatar {
+    width: 30px; height: 30px; border-radius: 50%;
+    margin-right: 8px; object-fit: cover; background-color: #fbfbfb;
+}
+.user-menu-trigger .user-caret { font-size: 0.9em; color: #fbfbfb; }
+.profile-dropdown {
+    display: none; position: absolute;
+    top: calc(100% + 5px); right: 0;
+    min-width: 100px; background-color: #044A42;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .18);
+    border-radius: 5px;
+    z-index: 1000; overflow: hidden;
+}
+.profile-dropdown.show { display: block; }
+.profile-dropdown ul { padding: 0; margin: 0; }
+.profile-dropdown li a {
+    display: block; padding: 8px 15px; color: #fbfbfb;
+    font-size: 0.95em; white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.profile-dropdown li a:hover { background-color: #7d7d7d; color: #ffffff; }
+.profile-dropdown li[role="separator"] {
+    height: 1px; background-color: #eee; margin: 5px 0;
+}

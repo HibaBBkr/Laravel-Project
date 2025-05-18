@@ -1,0 +1,218 @@
+
+  .path {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .path .title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .path-btn{
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+
+  /* reservation and payment style */
+.main-contain{
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 150px 100px;
+    max-width: 1400px;
+    }
+  .res-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+  .right {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+  }
+  .left {
+    flex: 1;
+    margin: 0 20px;
+    padding: 0 20px;
+  }
+  .main-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 40px 0;
+  }
+  .main-header span {
+    color: #bbb;
+    font-weight: normal;
+  }
+  
+  .left h2 {
+    margin-bottom: 10px;
+  }
+.form-group {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+}
+
+::placeholder { 
+  color: #888;
+  opacity: 1; 
+}
+
+.form-row {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+.half-width {
+    flex: 1; 
+    margin-bottom: 0;
+}
+  label {
+    display: block;
+    margin: 5px 0 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  select, input[type="time"], input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .time-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 20px;
+    margin: 10px 0;
+  }
+  .service-item {
+    margin-bottom: 10px;
+  }
+  .right {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .right img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .details {
+    padding: 15px;
+  }
+  .details h3 {
+    margin-top: 0;
+  }
+  .address, .attendees, .rating, .rental-info {
+    margin: 10px 0;
+    color: #555;
+  }
+  .rental-info table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .rental-info td {
+    padding: 5px 0;
+    color: #333;
+  }
+  .total {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+    
+  .submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #EFBF04;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #c39c01;
+  }
+  
+  .form-section {
+    padding: 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .hall-info, .host-info {
+    margin-bottom: 2rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="url"],
+  textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  fieldset {
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  fieldset label {
+    display: block;
+    margin: 0.3rem 0;
+  }
+  
+  .upload-gallery {
+    margin: 1rem 0;
+  }
+  
+  .ah-services {
+    margin: 1.5rem 0;
+  }
+  
+  .ah-service-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .ah-service-item input[type="number"] {
+    width: 80px;
+  }

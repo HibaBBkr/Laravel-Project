@@ -1,0 +1,389 @@
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 50px auto;
+    
+}
+.content-area {
+    padding-bottom: 60px; /* Space at the bottom */
+}
+
+.path {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .path .title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #25221d;
+  }
+.path-btn{
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fbfbfb;
+    background-color: #EFBF04;
+    border: 2px solid #EFBF04;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .path-btn:hover{
+    background-color: #c39c01;
+    transition: background-color 0.3s ease;
+  }
+.main-heading {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.add-hall-form {
+    margin-top: 20px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee; /* Separator between sections */
+}
+.form-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-heading {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-bullet {
+    font-size: 0.6em; /* Smaller bullet */
+    color: #555;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.sub-text {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 5px;
+}
+
+/* Two Column Layout */
+.two-column-section {
+    display: flex;
+    gap: 40px; /* Space between columns */
+}
+.form-column {
+    flex: 1; /* Each column takes equal space initially */
+}
+.hall-info-column { flex-basis: 60%; } /* Give hall info slightly more space */
+.upload-pictures-column { flex-basis: 40%; }
+
+/* Form Groups and Inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #00695C; /* Greenish border */
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: #333;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Expiry/CVC Group */
+.row-group {
+    display: flex;
+    gap: 20px;
+}
+.row-group > div {
+    flex: 1;
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.radio-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #00695C; /* Style the checked color */
+}
+.radio-option label {
+    margin-bottom: 0; /* Remove bottom margin */
+    font-size: 0.95em;
+    color: #333;
+}
+
+/* Upload Pictures Area */
+.upload-pictures-column .section-heading {
+    margin-bottom: 10px;
+}
+.picture-previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    border: 1px dashed #ccc;
+    min-height: 100px; /* Ensure area is visible */
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+.preview-image {
+    position: relative;
+    width: 80px; /* Adjust size */
+    height: 80px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.preview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.remove-image {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8em;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+}
+.upload-area {
+    text-align: right;
+}
+
+/* Services Section Grid */
+.services-section {
+    border-bottom: none; /* Remove border if it's complex */
+}
+.services-grid-header, .services-grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.2fr 1fr auto; /* Adjust column widths */
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.services-grid-header {
+    font-weight: bold;
+    color: #555;
+    font-size: 0.85em;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+.services-grid-row {
+  display: flex;
+  flex-wrap: nowrap;        /* لا ينزل عمود لسطر ثانٍ */
+  align-items: center; 
+  gap: 10px;   
+    /* محاذاة عمودية وسطية */
+    justify-content: space-between
+}
+
+.grid-cell input[type="text"] {
+    padding: 8px 10px; /* Smaller padding */
+    font-size: 0.9em;
+}
+.grid-cell.price-col {
+    display: flex;
+    align-items: center;
+}
+.grid-cell.price-col input {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+.grid-cell.price-col span {
+    font-size: 0.9em;
+    color: #777;
+}
+.grid-cell.pricing-type-col {
+    font-size: 0.9em;
+}
+.radio-group-inline {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.radio-group-inline input[type="radio"] { width: 14px; height: 14px; }
+.radio-group-inline label { margin-bottom: 0; font-size: 0.9em; color: #555;}
+
+.grid-cell.file-name-col {
+    font-size: 0.85em;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add-service-button {
+    background: none;
+    border: none;
+    color: #00695C;
+    cursor: pointer;
+    font-size: 0.95em;
+    padding: 5px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.add-service-button i { font-size: 1.1em; }
+.add-service-button:hover { text-decoration: underline; }
+.services-grid-header .delete-col { width: 40px; }
+.services-grid-row .delete-col { text-align: center; }
+.delete-service-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+
+/* Terms and Conditions */
+.terms-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+.terms-section input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #00695C;
+}
+.terms-section label {
+    margin-bottom: 0;
+    font-size: 0.95em;
+}
+.terms-section label a {
+    color: #00695C;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+.button-primary {
+    background-color: #EFBF04; /* Orange color */
+    color: #fbfbfb; /* Dark text */
+    font-size: 1.1em;
+}
+.button-primary:hover {
+    background-color: #c39c01;
+    transition: background-color 0.3s ease;
+}
+
+.button-secondary {
+    background-color: #e0e0e0; /* Light grey */
+    color: #333;
+    font-size: 0.85em; /* Smaller text for upload buttons */
+    padding: 6px 12px; /* Smaller padding */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.button-secondary:hover {
+    background-color: #d5d5d5;
+}
+
+.form-actions {
+    text-align: right;
+     margin-top: 20px;
+}
+
+/* --- Responsive Considerations (Basic) --- */
+@media (max-width: 992px) {
+    .two-column-section {
+        flex-direction: column; /* Stack columns */
+    }
+    .services-grid-header, .services-grid-row {
+        grid-template-columns: 1fr 1fr; /* Simplify grid for smaller screens */
+        /* Hide less critical columns or rearrange */
+        .pricing-type-col, .upload-col, .file-name-col { display: none; } /* Example: hide some columns */
+    }
+     .services-grid-header {
+        display: none; /* Hide header on small screens */
+     }
+    .services-grid-row {
+        border: 1px solid #eee;
+        padding: 10px;
+        margin-bottom: 15px;
+        grid-template-columns: auto 1fr; /* Label - Input style */
+    }
+     .grid-cell::before { /* Add labels back */
+        content: attr(data-label) ": ";
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+     }
+      .grid-cell input[type="text"] { width: 100%;}
+
+}
+
+@media (max-width: 768px) {
+    .header-container { flex-direction: column; align-items: flex-start; gap: 15px;}
+    .main-navigation { width: 100%; justify-content: space-between;}
+    .main-heading { font-size: 1.5em; }
+    .section-heading { font-size: 1.1em; }
+    .expiry-cvc-group { flex-direction: column; gap: 15px;}
+}
+
+
+
