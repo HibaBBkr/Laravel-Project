@@ -15,7 +15,7 @@ Route::get('/', function () {
 Route::middleware(['auth'])->prefix('owner')->name('owner.')->group(function () { // Assuming these are for authenticated users
     Route::get('/calendar', [OwnerController::class, 'showCalendar'])->name('calendar'); // Route name: owner.calendar
     Route::get('/reviews', [OwnerController::class, 'showReviews'])->name('reviews');    // Route name: owner.reviews
-    Route::get('/add-hall', [OwnerController::class, 'showAddHallForm'])->name('addHall'); // Route name: owner.addHall
+    Route::get('/add-a-hall', [OwnerController::class, 'showAddHallForm'])->name('addHall'); // Route name: owner.addHall
 
     // If you have a POST route for submitting the form:
     // Route::post('/add-hall', [OwnerController::class, 'storeHall'])->name('storeHall');
