@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\OwnerController;
+use App\Http\Controllers\hallController;
 
 // Homepage
 Route::get('/', function () {
@@ -32,3 +33,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');
     Route::post('/profile', [ProfileController::class, 'update'])->name('profile.update');
 });
+
+Route::get('halls/create', [hallController::class, 'create'])->name('halls.create');
